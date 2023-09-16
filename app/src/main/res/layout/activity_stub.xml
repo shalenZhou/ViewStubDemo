@@ -10,35 +10,37 @@
         android:id="@+id/showViewBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="show ViewStub"
+        android:text="show Android picture"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/updateViewBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/updateViewBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="update ViewStub"
+        android:text="update grid picture"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/hideViewBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/showViewBtn" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/hideViewBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="hide ViewStub"
+        android:text="hide picture"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/updateViewBtn" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ViewStub
         android:id="@+id/viewStub"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout="@layout/layout_stub"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
